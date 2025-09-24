@@ -1,0 +1,59 @@
+body {
+    all: unset;
+}
+
+wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+/* ===== STYLES FOR NAVBAR ===== */
+#navbar {
+
+    /** size settings */
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /** flex settings */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /** styles */
+    padding: 15px 30px;             /* ? change navbar paddings */
+    background-color: #BFBFBF;    /* ? change navbar background color */
+}
+
+#navbar #header-links-container p {
+    display: inline;
+    width: fit-content;
+
+    /** styles */
+    font-size: 20px;                /* TODO: change font size */
+}
+
+#navbar #header-links-container #divider {
+    user-select: none;
+    font-size: 24px;                /* ? Change divider size */
+}
+
+#navbar #account #account-image-container {
+    height: 45px;                   /* TODO: change image height */
+    width: 45px;                    /* TODO: change image width */
+    padding: 5px;
+}
+
+#navbar #account #account-image-container:hover {
+    cursor: pointer;
+}
+
+#navbar #account #account-image-container img {
+    height: 100%;
+    width: 100%;
+}
+
