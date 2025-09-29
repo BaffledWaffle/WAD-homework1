@@ -1,0 +1,57 @@
+#content {
+    /* TODO: add background image */
+}
+
+/* =====  ===== */
+#add-post-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /** aligment, sizes */
+    max-width: 900px;
+    width: 70%;
+
+    /** styles */
+    background-color: gray;
+}
+
+#inputs-container {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+#inputs-container > div {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 15px;
+}
+
+#inputs-container label {
+    font-size: 24px;                    /* TODO: label styles */
+}
+
+#inputs-container input[type="file"] {
+    font-size: 20px;                    /* TODO: "Choose file" button's styles */
+    flex-grow: 1;
+}
+
+#inputs-container textarea {
+    font-size: 20px;
+    flex-grow: 1;
+    min-height: 200px;
+}
+
+#add-post-form > button {
+    width: 100%;
+    height: 100px;
+                                        /* TODO: add styles for button */
+}
+
+#add-post-form > button:hover {
+    cursor: pointer;
+}

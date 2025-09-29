@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/flex.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/add-post.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <nav id="navbar">
+            <div id="header-links-container">
+                <p><a href="index.html">Home</a></p>
+            </div>
+            <div id="account">
+                <div id="account-image-container">                      <!-- TODO: add link to login -->
+                    <img src="assets/img/account_circle.svg" alt="">
+                </div>
+            </div>
+        </nav>
+        <div id="content">
+            <form id="add-post-form" action="">                              <!-- TODO (later): action -->
+                <div id="inputs-container">
+                    <div>
+                        <label for="post-file">Add file:</label>
+                        <input id="post-file" name="postFile" type="file">
+                    </div>
+
+                    <div>
+                        <label for="post-text">Post text:</label>
+                        <textarea id="post-text" placeholder="Type here Your post text..." name="postText"></textarea>
+                    </div>
+                </div>
+                <button type="submit">CREATE POST</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

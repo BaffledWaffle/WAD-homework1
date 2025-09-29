@@ -1,11 +1,15 @@
+/* ===== COMMON STYLES ===== */
+
 body {
     all: unset;
 }
 
-wrapper {
+.wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 100vw;
+    min-height: 100vh;
 }
 
 /* ===== STYLES FOR NAVBAR ===== */
@@ -14,7 +18,7 @@ wrapper {
     /** size settings */
     width: 100%;
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 
@@ -33,7 +37,7 @@ wrapper {
     display: inline;
     width: fit-content;
 
-    /** styles */
+    /** styles */                   /* TODO: add font, sizes, weight for navbar links' texts */
     font-size: 20px;                /* TODO: change font size */
 }
 
@@ -57,3 +61,8 @@ wrapper {
     width: 100%;
 }
 
+/* ===== CONTENT CONTAINER styles ===== */
+#content {
+    width: 100%;
+    flex-grow: 1;
+}
