@@ -1,0 +1,55 @@
+#content {
+    /* TODO: add background image */
+}
+
+/* =====  ===== */
+#login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /** aligment, sizes */
+    max-width: 450px;
+    width: 40%;
+
+    /** styles */
+    background-color: gray;
+}
+
+#inputs-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    gap: 20px;
+}
+
+#inputs-container > p {                 /* TODO: create account or please login styles */
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: green;
+    margin: 0;
+}
+
+#inputs-container > p a {                 /* TODO: links design */
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
+#inputs-container > input {
+    height: 32px;                           /* TODO: inputs (email, password) styles */
+    width: 100%;
+}
+
+#inputs-container > button {
+    width: fit-content;
+}
+
+#inputs-container h2 {                  /* TODO: header styles */
+    display: block;
+    width: 100%;
+    text-align: center;
+}
