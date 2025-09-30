@@ -1,0 +1,17 @@
+#content {
+    /* TODO: add backgroud image */
+}
+
+#feed-od-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+
+    /** styles */
+    background-color: #efefef;
+}
+
+.post {
+
+}

@@ -1,11 +1,26 @@
+/* ===== COMMON STYLES ===== */
+
 body {
-    all: unset;
+    font-family: "mont";
+
 }
 
-wrapper {
+@font-face {
+  font-family: "mont";
+  src: url("fonts/mont/Mont-HeavyDEMO.otf");
+}
+
+@font-face {
+  font-family: "mont_light";
+  src: url("fonts/mont/Mont-ExtraLightDEMO.otf") format("opentype");
+}
+
+.wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 100vw;
+    min-height: 100vh;
 }
 
 /* ===== STYLES FOR NAVBAR ===== */
@@ -14,9 +29,12 @@ wrapper {
     /** size settings */
     width: 100%;
     box-sizing: border-box;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+
+    z-index: 1000;
 
     /** flex settings */
     display: flex;
@@ -25,21 +43,29 @@ wrapper {
     align-items: center;
 
     /** styles */
-    padding: 15px 30px;             /* ? change navbar paddings */
-    background-color: #BFBFBF;    /* ? change navbar background color */
+    padding: 7px 30px;             /* ? change navbar paddings */
+    background-color: #341A0B;    /* ? change navbar background color */
+    
 }
 
-#navbar #header-links-container p {
+#navbar #header-links-container a {
     display: inline;
     width: fit-content;
 
-    /** styles */
+    /** styles */                   /* TODO: add font, sizes, weight for navbar links' texts */
     font-size: 20px;                /* TODO: change font size */
+    color: #F5E8D9;
+    text-decoration: none;
+}
+
+#navbar #header-links-container a:hover {
+    color: #B2997C;
 }
 
 #navbar #header-links-container #divider {
     user-select: none;
     font-size: 24px;                /* ? Change divider size */
+    color: #F5E8D9;
 }
 
 #navbar #account #account-image-container {
@@ -57,3 +83,8 @@ wrapper {
     width: 100%;
 }
 
+/* ===== CONTENT CONTAINER styles ===== */
+#content {
+    width: 100%;
+    flex-grow: 1;
+}
