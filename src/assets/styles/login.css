@@ -1,8 +1,9 @@
 
-#content{
+.wrapper{
     background-image: url("img/womenBackground.png");
     background-size: cover;       
-    height: 100vh;      
+    height: 100vh;  /* PROBLEM white line on top*/ 
+
 }
 /* =====  ===== */
 
@@ -30,7 +31,7 @@
     gap: 20px;
 }
 
-#inputs-container > p {                 /* TODO: create account or please login styles */
+#inputs-container > p {                 
     display: block;
     width: 100%;
     text-align: center;
@@ -38,14 +39,14 @@
     margin: 0;
 }
 
-#inputs-container > p a {                 /* TODO: links design */
+#inputs-container > p a {                
     display: block;
     width: 100%;
     text-align: center;
     color: #800000;
 }
 
-#inputs-container > p a:hover {                 /* TODO: links design */
+#inputs-container > p a:hover {                
     color: #AF0101;
 }
 

@@ -2,6 +2,7 @@
 
 body {
     font-family: "mont";
+    overflow-x: hidden;
 
     /*solution for white lines on the sites*/
     margin: 0;
@@ -47,8 +48,8 @@ body {
     align-items: center;
 
     /** styles */
-    padding: 7px 30px;             /* ? change navbar paddings */
-    background-color: #341A0B;    /* ? change navbar background color */
+    padding: 7px 30px;             
+    background-color: #341A0B;    
     
 }
 
@@ -56,36 +57,67 @@ body {
     display: inline;
     width: fit-content;
 
-    /** styles */                   /* TODO: add font, sizes, weight for navbar links' texts */
-    font-size: 20px;                /* TODO: change font size */
+    /** styles */                   
+    font-size: 20px;                
     color: #F5E8D9;
     text-decoration: none;
+
+    
+}
+
+.nav-link {
+    /** background for hover (it is necesseraly...)*/
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 #navbar #header-links-container a:hover {
     color: #B2997C;
+    background-color: #1F0E03;
 }
 
 #navbar #header-links-container #divider {
     user-select: none;
-    font-size: 24px;                /* ? Change divider size */
+    font-size: 24px;                
     color: #F5E8D9;
 }
 
 #navbar #account #account-image-container {
-    height: 45px;                   /* TODO: change image height */
-    width: 45px;                    /* TODO: change image width */
-    padding: 5px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+    overflow: hidden; 
+}
+
+#navbar #account #account-image-container img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+
+    /**alignment*/
+    margin-top: 6px; 
 }
 
 #navbar #account #account-image-container:hover {
     cursor: pointer;
+    background-color: #1F0E03;
 }
 
-#navbar #account #account-image-container img {
-    height: 100%;
-    width: 100%;
+
+
+
+#navbar #account #account-image-container:hover {
+    cursor: pointer;
+    background-color: #1F0E03;
 }
+
+
 
 #divider{
     font-family:Arial, Helvetica, sans-serif;
