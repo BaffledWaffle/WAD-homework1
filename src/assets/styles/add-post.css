@@ -16,6 +16,7 @@
     /** styles */
     background-color: rgba(245, 232, 217, 0.6);
     backdrop-filter: blur(5px);
+    border-radius: 10px; /* Optional*/
 }
 
 #inputs-container {
@@ -75,7 +76,8 @@
     background-color: #800000;
     font-size: 1.5em;
     color: #F5E8D9;
-                                        /* TODO: add styles for button */
+
+    border-radius: 0px 0px 10px 10px; /* Optional*/
 }
 
 #add-post-form > button:hover {
