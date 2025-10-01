@@ -10,7 +10,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     /** aligment, sizes */
-    max-width: 800px;
+    max-width: 700px;
     width: 70%;
 
     /** styles */
@@ -44,10 +44,11 @@
 }
 
 
-#post-file {
+#post-file {                            /* PROBLEM: bad for optimization*/
   display: inline-block;
-  padding: 6px 12px;
+  padding: 10px 100px;
   cursor: pointer;
+  margin-left: 17px;                   /*One line with text box, other options?*/
   background-color: #800000;
   border-radius: 1em;
   color: #F5E8D9;

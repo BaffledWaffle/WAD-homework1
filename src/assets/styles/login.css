@@ -1,4 +1,6 @@
-
+#wrapper{
+    font-family: "mont";
+}
 #content{
     background-image: url("img/womenBackground.png");
     background-size: cover;       
@@ -62,6 +64,23 @@
     display: block;
     width: 100%;
     text-align: center;
+}
+
+#inputs-container > button {
+  display: inline-block;
+  padding: 10px 50px;
+  cursor: pointer;
+  background-color: #800000;
+  border-radius: 1em;
+  border: none;
+  color: #F5E8D9;
+  font-family: "mont";
+  
+}
+
+#inputs-container > button:hover {
+    background-color: #341A0B;
+    color: #B2997C;
 }
 
 
