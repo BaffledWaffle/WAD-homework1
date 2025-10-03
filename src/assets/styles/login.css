@@ -1,19 +1,26 @@
-#content {
-    /* TODO: add background image */
-}
 
+.wrapper{
+    background-image: url("img/womenBackground.png");
+    background-size: cover;       
+    height: 100vh;  /* PROBLEM white line on top*/ 
+
+}
 /* =====  ===== */
+
+
 #login-form {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 55%;
+    left: 70%;
     transform: translate(-50%, -50%);
     /** aligment, sizes */
     max-width: 450px;
     width: 40%;
 
     /** styles */
-    background-color: gray;
+   background-color: rgba(245, 232, 217, 0.6);
+   backdrop-filter: blur(5px);
+   border-radius: 10px; /* Optional*/
 }
 
 #inputs-container {
@@ -24,24 +31,29 @@
     gap: 20px;
 }
 
-#inputs-container > p {                 /* TODO: create account or please login styles */
+#inputs-container > p {                 
     display: block;
     width: 100%;
     text-align: center;
-    color: green;
+    color: black;
     margin: 0;
 }
 
-#inputs-container > p a {                 /* TODO: links design */
+#inputs-container > p a {                
     display: block;
     width: 100%;
     text-align: center;
-    color: red;
+    color: #800000;
+}
+
+#inputs-container > p a:hover {                
+    color: #AF0101;
 }
 
 #inputs-container > input {
     height: 32px;                           /* TODO: inputs (email, password) styles */
     width: 100%;
+    font-family: "mont";
 }
 
 #inputs-container > button {
@@ -52,4 +64,21 @@
     display: block;
     width: 100%;
     text-align: center;
+}
+
+#inputs-container > button {
+  display: inline-block;
+  padding: 10px 50px;
+  cursor: pointer;
+  background-color: #800000;
+  border-radius: 1em;
+  border: none;
+  color: #F5E8D9;
+  font-family: "mont";
+  
+}
+
+#inputs-container > button:hover {
+    background-color: #341A0B;
+    color: #B2997C;
 }
