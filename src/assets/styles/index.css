@@ -1,19 +1,21 @@
 #content {
     background-image: url("img/indeksBackground1.png");
+    background-repeat: no-repeat;
     background-size: cover;
-    min-height: 300vh; /* it is constant, will be better if it depents of number of posts*/
+    background-attachment: fixed;
+    height: auto;
+    padding: 100px 0;
 }
 
 
 #feed-of-posts {
-    position: absolute;
-    top: 100%;
+    position: relative;
+
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     max-width: 450px;
     width: 90%;
     padding: 20px;
-    margin-top: 350px; /*top and margin-top - find better solution*/
     
     /*style*/
     background-color: rgba(245, 232, 217, 0.6);
