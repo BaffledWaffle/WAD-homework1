@@ -1,5 +1,5 @@
 .wrapper {
-    background-image: url("img/background_addPost.png");
+    background-image: url("../img/background_addPost.png");
     background-size: cover;
 }
 
@@ -62,9 +62,11 @@
 #inputs-container textarea {
     font-size: 20px;
     flex-grow: 1;
+    padding: 5px;
     min-height: 200px;
     font-family: "mont_light";
-    font-size: 1em !important;
+    font-size: 16px;
+    outline: none;
 }
 
 

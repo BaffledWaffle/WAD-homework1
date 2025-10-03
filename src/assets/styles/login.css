@@ -1,16 +1,14 @@
-
-.wrapper{
-    background-image: url("img/womenBackground.png");
-    background-size: cover;       
-    height: 100vh;  /* PROBLEM white line on top*/ 
-
+#content {
+    background-image: url("../img/womenBackground.png");
+    background-size: cover;
 }
+
 /* =====  ===== */
 
 
 #login-form {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 70%;
     transform: translate(-50%, -50%);
     /** aligment, sizes */
@@ -54,6 +52,8 @@
     height: 32px;                           /* TODO: inputs (email, password) styles */
     width: 100%;
     font-family: "mont";
+    padding: 5px;
+    outline: none;
 }
 
 #inputs-container > button {
