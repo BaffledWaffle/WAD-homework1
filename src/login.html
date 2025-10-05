@@ -33,6 +33,21 @@
                     <p><a href="#">Forget password?</a></p>
                 </div>
             </form>
+            <script>
+                document.getElementById("login-form").addEventListener("submit", function(event) {
+                    event.preventDefault(); 
+
+                    const email = document.getElementById("login-email").value.trim(); //trim for spaces
+                    const password = document.getElementById("login-password").value.trim();
+
+                    if (email === "" || password === "") {
+                        alert("Please fill in both email and password.");
+                    } else {
+                        // all fields filled
+                        window.location = "index.html";
+                    }
+                });
+                </script>
         </div>
     </div>
 </body>

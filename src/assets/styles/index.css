@@ -92,6 +92,17 @@
 
 .main-text {
     font-family: "mont_light";
+    
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;     /* shows only 3 lines */
+    line-clamp: 3; /*added because of warning without it (it's standard)*/
+    -webkit-box-orient: vertical;
+}
+
+.main-text.expanded {
+  -webkit-line-clamp: unset; /* show all lines when expanded */
+  line-clamp: unset; /*added because of warning without it*/
 }
 
 .text button {
