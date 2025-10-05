@@ -133,9 +133,15 @@ footer {
 footer #columns-container {
     flex-grow: 1;
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     flex-direction: row;
     justify-content: space-between;
     color: #F5E8D9;
+}
+
+footer .column {
+    flex: 1 1 200px;
 }
 
 footer .column h2 {

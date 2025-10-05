@@ -14,12 +14,14 @@
     /** aligment, sizes */
     max-width: 450px;
     width: 40%;
+    min-width: 350px;
 
     /** styles */
    background-color: rgba(245, 232, 217, 0.6);
    backdrop-filter: blur(5px);
    border-radius: 10px; /* Optional*/
 }
+
 
 #inputs-container {
     display: flex;

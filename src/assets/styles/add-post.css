@@ -29,13 +29,15 @@
 
 #inputs-container > div {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: start;
     gap: 15px;
 }
 
 #inputs-container label {
-    font-size: 24px;                  /* TODO: label styles */
+    font-size: 24px;
+    flex-basis: 120px;
 }
 
 #inputs-container input[type="file"] {
