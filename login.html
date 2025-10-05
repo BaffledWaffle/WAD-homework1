@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/login.css">
+    <link rel="stylesheet" href="assets/styles/media.css">
+    <title>LOGIN | PARAPAPA</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav id="navbar">
+            <div id="header-links-container">
+                <a href="index.html" target="_self"  class="nav-link">Home</a>
+            </div>
+            <div id="account">
+                <div id="account-image-container">                      
+                   <a href="login.html" target="_self"  class="nav-link"><img src="assets/img/account_circle.svg" alt=""></a> 
+                </div>
+            </div>
+        </nav>
+
+        <div id="content">
+            <form id="login-form" action="">                              <!-- TODO (later): action -->
+                <div id="inputs-container">
+                    <h2>WELCOME TO PARAPAPA</h2>
+                    <p><a href="#">Create an account</a></p>
+                    <p>or</p>
+                    <p><b>Please log in</b></p>
+                    <input type="text" name="email" id="login-email" placeholder="Email">
+                    <input type="password" name="password" id="login-password" placeholder="Password">
+                    <button type="submit">LOG IN</button>  <!--TODO add link to index.html (it should be button not a?)-->
+                    <p><a href="#">Forget password?</a></p>
+                </div>
+            </form>
+            <script>
+                document.getElementById("login-form").addEventListener("submit", function(event) {
+                    event.preventDefault(); 
+
+                    const email = document.getElementById("login-email").value.trim(); //trim for spaces
+                    const password = document.getElementById("login-password").value.trim();
+
+                    if (email === "" || password === "") {
+                        alert("Please fill in both email and password.");
+                    } else {
+                        // all fields filled
+                        window.location = "index.html";
+                    }
+                });
+                </script>
+        </div>
+    </div>
+</body>
+</html>

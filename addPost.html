@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/flex.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/add-post.css">
+    <title>ADD POST | PARAPAPA</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav id="navbar">
+            <div id="header-links-container">
+                <a href="index.html" target="_self"  class="nav-link">Home</a>
+            </div>
+            <div id="account">
+                <div id="account-image-container">                      
+                    <a href="login.html" target="_self"  class="nav-link"><img src="assets/img/account_circle.svg" alt=""></a>
+                </div>
+            </div>
+        </nav>
+        <div id="content">
+            <form id="add-post-form" action="">                              <!-- TODO (later): action -->
+                <div id="inputs-container">
+                    <div>
+                        <label for="post-file">Add file:</label>
+                        <label id="post-file" name="postFile">
+                            <input type="file"/>Choose file
+                        </label>
+                    </div>
+                    <div>
+                        <label for="post-text">Post text:</label>
+                        <textarea id="post-text" placeholder="Type here Your post text..." name="postText"></textarea>
+                    </div>
+                </div>
+                <button type="button" onclick="window.location.href='index.html'">CREATE POST</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
